@@ -16,6 +16,8 @@ header{
     justify-content: space-between;
     gap: 30px;
     border: 1px solid #000;
+    position: sticky;
+    top: 0;
 }
 
 .logo{
@@ -90,6 +92,10 @@ header{
 }
 
 
+.portafolio__img2.active h3{
+    color: #1C9FBB;
+}
+
 .portafolio__titulo{
     color: #000;
     text-decoration: underline;
@@ -99,3 +105,17 @@ header{
 
 }
 
+/*pie de página*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C9FBB;
+    width: 100%;
+    height: 200px;
+}
+
+footer img{
+    width: 50px;
+}
