@@ -23,6 +23,7 @@ header{
 
 }
 
+/*Navbar*/
 
 .navbar{
     display: flex;
@@ -47,3 +48,54 @@ header{
     color: aqua;
     text-decoration: underline;
 }
+
+/*Cabecera*/
+
+.cabecera{
+    background-image: url(../assets/Portafolio\ de\ servicios.jpg);
+    max-width: 100%;
+    height: 214px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cabecera__titulo{
+    color: white;
+    letter-spacing: 9.12px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 32px;
+    font-weight: 700;
+
+    
+}
+
+
+/*section 2*/
+
+.portafolio{
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../assets/Vertizzes.png);
+    background-position: center center;
+}
+
+.portafolio__img1{
+    margin-top: 5%;
+}
+
+.portafolio__img2{
+    margin-top: 10%;
+}
+
+
+.portafolio__titulo{
+    color: #000;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 20px;
+
+
+}
+
