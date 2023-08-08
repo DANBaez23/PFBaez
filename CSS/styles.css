@@ -47,7 +47,7 @@ header{
 }
 
 .menu__item.active a{
-    color: aqua;
+    color: #1C9FBB;
     text-decoration: underline;
 }
 
