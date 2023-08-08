@@ -12,33 +12,27 @@
 
 header{
     display: flex;
-    background-color: white;
+    background-color: #f6f6f5;
     justify-content: space-between;
-    gap: 30px;
     border: 1px solid #000;
     position: sticky;
+    padding: 2rem;
     top: 0;
+
 }
 
 .logo{
-    width: 200px;
+    max-width: 5rem;
 
 }
 
 /*Navbar*/
 
-.navbar{
-    display: flex;
-    align-items: center;
-    margin: 20px;
-}
-
 .menu{
     font-family: general;
     display: flex;
     list-style-type: none;
-    gap: 30px;
-    grid-gap: 50px;
+    gap: 1rem;
 }
 
 .menu__item a{
@@ -49,6 +43,10 @@ header{
 .menu__item.active a{
     color: #1C9FBB;
     text-decoration: underline;
+}
+
+.abrir-menu{
+    display: none;
 }
 
 /*Cabecera*/
@@ -164,3 +162,21 @@ footer img{
 button img{
     width: 70px;
 }
+
+
+/*media queries*/
+
+@media screen and (max-width: 480px){
+
+    .navbar{
+        position: absolute;
+        top: 0;
+    }
+
+    .menu{
+        flex-direction: column;
+    }
+
+
+}
+    
