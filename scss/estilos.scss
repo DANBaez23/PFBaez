@@ -93,7 +93,6 @@ header{
 
     h3{
         text-align: center;
-        border: #000 solid 1px;
         border-radius: 10px;
         padding: 5px;
         font-family: $fuente-principal;
@@ -299,6 +298,16 @@ form{
 }
 
 /*pie de página*/
+
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+
+    .grupo1{
+        width: 100%;
+        margin-left: 20px;
+    }
+}
 
 
 .Chat-icon{
