@@ -168,7 +168,7 @@ section{
     }
 }
 
-/*section 2*/
+/*section-quiennes somos*/
 .contenedor2{
 
     .contenedor-cards{
@@ -229,7 +229,22 @@ section{
         padding-top: 23px;
     }
 
+    .arrow-down{
+        padding: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .arrow-down img{
+        height: auto;
+        width: 70px;
+    }
+    
+
 }
+
 
 
 /*section portafolio*/
@@ -299,15 +314,6 @@ form{
 
 /*pie de página*/
 
-.pie-pagina{
-    width: 100%;
-    background-color: #0a141d;
-
-    .grupo1{
-        width: 100%;
-        margin-left: 20px;
-    }
-}
 
 
 .Chat-icon{
