@@ -63,12 +63,20 @@ header{
 
 .menu__item a{
     color: black;
-    text-decoration: none
+    text-decoration: none;
+
+    &:hover{
+        color: #0cabb0;
+        text-decoration: underline;
+    }
+
+    
 }
 
 .menu__item.active a{
     color: #1C9FBB;
     text-decoration: underline;
+
 }
 
 .abrir-menu{
@@ -168,7 +176,14 @@ section{
     }
 }
 
-/*section-quiennes somos*/
+/*section-quienes somos*/
+.section-somos{
+    background-image: url(../assets/Icons/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 850px;
+   
+}
 .contenedor2{
 
     .contenedor-cards{
@@ -248,24 +263,42 @@ section{
 
 
 /*section portafolio*/
-
+.section-portafolio{
+    background-image: url(../assets/Vertizzes.png);
+}
 .contenedor3{
     padding: 100px;
     align-items: center;
     
 
-
     .contenedor__card{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+
+        .banner{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            width: auto;
+            margin-left: 50%;
+            
+
+            img{
+                width: 200px;
+                height: auto;
+            }
+        } 
+        
 
     
 }
     
     .card{
+        background: none;
         border: none;
         text-align: center;
         align-items: center;
+
     }
 
     .caja2{
@@ -295,6 +328,54 @@ section{
 
 }
 
+/*section servicios*/
+
+.section-servicios{
+
+    .container4{
+        height: 800px;
+        background-position: center center;
+        background-size: cover;
+        object-fit: cover;
+
+        .container4__parrafos{
+            
+            h2{
+                color: #fff;
+                text-align: center;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                font-size: 32px;
+                letter-spacing: 9.12px;
+                font-family: $fuente-principal;
+                padding: 5em 0 2.5em;
+            }
+            p{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;    
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+            }
+
+          
+
+        }
+
+
+    }
+
+    .container4__imagen{
+        text-align: center;
+
+        img{
+            width: 50px;
+            filter: invert(98%) sepia(3%) saturate(1974%) hue-rotate(197deg) brightness(115%) contrast(100%);
+        }
+    }
+
+
+}
 
 /*section-contacto 3*/
 

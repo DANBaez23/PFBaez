@@ -48,14 +48,20 @@
         width: 45px;
         height: 45px;
         line-height: 45px;
-        color: #fff;
+        // filter: invert(98%) sepia(3%) saturate(1974%) hue-rotate(197deg) brightness(115%) contrast(100%);
         margin-right: 10px;
         text-align: center;
         transition: all 300ms ease;
 
-        &:hover{
-            color: aqua;
+        img{
+            filter: invert(98%) sepia(3%) saturate(1974%) hue-rotate(197deg) brightness(115%) contrast(100%);
+
+            &:hover{
+                filter: invert(97%) sepia(64%) saturate(5311%) hue-rotate(103deg) brightness(108%) contrast(105%);
+            }
         }
+
+       
 }
 
 .copyright{

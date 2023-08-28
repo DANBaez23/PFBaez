@@ -42,13 +42,15 @@
   width: 45px;
   height: 45px;
   line-height: 45px;
-  color: #fff;
   margin-right: 10px;
   text-align: center;
   transition: all 300ms ease;
 }
-.pie-pagina .grupo-1 .red-social a:hover {
-  color: aqua;
+.pie-pagina .grupo-1 .red-social a img {
+  filter: invert(98%) sepia(3%) saturate(1974%) hue-rotate(197deg) brightness(115%) contrast(100%);
+}
+.pie-pagina .grupo-1 .red-social a img:hover {
+  filter: invert(97%) sepia(64%) saturate(5311%) hue-rotate(103deg) brightness(108%) contrast(105%);
 }
 .pie-pagina .copyright {
   background-color: #0a1a2a;
@@ -104,6 +106,10 @@ header .logo2 {
 .menu__item a {
   color: black;
   text-decoration: none;
+}
+.menu__item a:hover {
+  color: #0cabb0;
+  text-decoration: underline;
 }
 
 .menu__item.active a {
@@ -196,7 +202,14 @@ section {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/*section-quiennes somos*/
+/*section-quienes somos*/
+.section-somos {
+  background-image: url(../assets/Icons/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 850px;
+}
+
 .contenedor2 {
   /*titulos*/
 }
@@ -260,15 +273,31 @@ section {
 }
 
 /*section portafolio*/
+.section-portafolio {
+  background-image: url(../assets/Vertizzes.png);
+}
+
 .contenedor3 {
   padding: 100px;
   align-items: center;
 }
 .contenedor3 .contenedor__card {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+}
+.contenedor3 .contenedor__card .banner {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: auto;
+  margin-left: 50%;
+}
+.contenedor3 .contenedor__card .banner img {
+  width: 200px;
+  height: auto;
 }
 .contenedor3 .card {
+  background: none;
   border: none;
   text-align: center;
   align-items: center;
@@ -292,6 +321,38 @@ section {
   background-color: #000;
   width: 200px;
   height: 2px;
+}
+
+/*section servicios*/
+.section-servicios .container4 {
+  height: 800px;
+  background-position: center center;
+  background-size: cover;
+  object-fit: cover;
+}
+.section-servicios .container4 .container4__parrafos h2 {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 32px;
+  letter-spacing: 9.12px;
+  font-family: general;
+  padding: 5em 0 2.5em;
+}
+.section-servicios .container4 .container4__parrafos p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.section-servicios .container4__imagen {
+  text-align: center;
+}
+.section-servicios .container4__imagen img {
+  width: 50px;
+  filter: invert(98%) sepia(3%) saturate(1974%) hue-rotate(197deg) brightness(115%) contrast(100%);
 }
 
 /*section-contacto 3*/
