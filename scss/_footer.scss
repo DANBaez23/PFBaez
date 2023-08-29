@@ -7,7 +7,6 @@
     .grupo-1{
         width: 100%;
         margin: auto;
-        // max-width: 1400px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 50px;
@@ -48,7 +47,6 @@
         width: 45px;
         height: 45px;
         line-height: 45px;
-        // filter: invert(98%) sepia(3%) saturate(1974%) hue-rotate(197deg) brightness(115%) contrast(100%);
         margin-right: 10px;
         text-align: center;
         transition: all 300ms ease;

@@ -144,9 +144,9 @@ header .logo2 {
   background-color: rgba(217, 217, 217, 0.7);
 }
 .contenedor img {
-  object-fit: fill;
-  width: 100%;
-  height: 100%;
+  object-fit: cover;
+  width: 70%;
+  height: 500px;
   border-radius: 15px;
 }
 
@@ -219,7 +219,7 @@ section {
   text-align: center;
 }
 .contenedor2 img {
-  object-fit: fill;
+  object-fit: cover;
   width: 230px;
   height: 385px;
   border-radius: 25px;
@@ -352,6 +352,10 @@ section {
 }
 .section-servicios .container4__imagen img {
   width: 50px;
+  filter: invert(98%) sepia(3%) saturate(1974%) hue-rotate(197deg) brightness(115%) contrast(100%);
+}
+
+.icon-service button img {
   filter: invert(98%) sepia(3%) saturate(1974%) hue-rotate(197deg) brightness(115%) contrast(100%);
 }
 
