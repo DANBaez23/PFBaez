@@ -85,8 +85,13 @@ header {
   top: 0;
   z-index: 100;
 }
-header .button-menu {
+header .abrir-menu {
   opacity: 0;
+  width: auto;
+  height: 50px;
+  margin-top: 50px;
+  background: none;
+  border: none;
 }
 header .logo {
   max-width: 10rem;
@@ -112,13 +117,13 @@ header .logo2 {
   text-decoration: underline;
 }
 
+.navbar button {
+  opacity: 0;
+}
+
 .menu__item.active a {
   color: #1C9FBB;
   text-decoration: underline;
-}
-
-.abrir-menu {
-  display: none;
 }
 
 /*Index contenedor*/
@@ -396,14 +401,37 @@ button img {
 
 /*media queries*/
 @media screen and (max-width: 576px) {
-  /*novbar*/
+  /*navbar*/
+  #abrir, .Cerrar-menu {
+    opacity: 100;
+    display: block;
+  }
   .navbar {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
     position: fixed;
-    right: 0;
-    background-color: #000;
+    justify-content: start;
+    align-items: end;
     top: 0;
+    right: 0;
     bottom: 0;
+    background-color: #000;
+    padding: 2rem;
+    gap: 1rem;
+  }
+  .navbar .Cerrar-menu {
+    opacity: 100;
+    border-radius: 5px;
+    width: 70px;
+    height: auto;
+    border: none;
+    font-family: secundario;
+  }
+  .navbar.visible {
+    opacity: 1;
+    visibility: visible;
   }
   .menu {
     display: flex;
@@ -436,20 +464,126 @@ button img {
     border: none;
     background: none;
   }
-  /*footer*/
-  .pie-pagina {
-    width: 100%;
-    background-color: #0a141d;
+  /*Quienes somos*/
+  .section-somos {
+    background-image: url(../assets/Icons/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 850px;
   }
-  .pie-pagina .grupo-1 {
-    width: 90%;
-    margin: auto;
+  .contenedor2 h2 {
+    text-align: center;
+    padding: 3rem 0 0 0;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 12px;
+    filter: blur(1px);
+  }
+  .contenedor2 h6 {
+    font-family: secundario;
+    font-size: 15px;
+    font-style: normal;
+    padding: 5px 0 5px;
+  }
+  .contenedor2 .contenedor-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 30px 0px;
     text-align: center;
   }
+  .contenedor2 img {
+    object-fit: cover;
+    width: 200px;
+    height: 385px;
+    border-radius: 25px;
+  }
+  /*titulos*/
+  h1 {
+    color: #000;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: general;
+    padding-top: 2rem;
+  }
+  hr {
+    height: 5px;
+    background-color: #000;
+    width: 15%;
+    margin-left: 42%;
+    margin-right: 42%;
+  }
+  h4 {
+    font-family: general;
+    font-size: 15px;
+    font-style: normal;
+    padding-top: 23px;
+  }
+  /*section-portafolio*/
+  .section-portafolio {
+    background-image: url(../assets/Vertizzes.png);
+  }
+  .contenedor3 {
+    padding: 100px;
+    align-items: center;
+  }
+  .contenedor3 .contenedor__card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contenedor3 .contenedor__card .banner {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: auto;
+    margin-left: 50%;
+  }
+  .contenedor3 .contenedor__card .banner a .arrow-down {
+    display: none;
+  }
+  .contenedor3 .contenedor__card .banner img {
+    width: 200px;
+    height: auto;
+  }
+  .cabecera-portafolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/Portafolio\ de\ servicios.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+  }
+  .cabecera-portafolio h2 {
+    font-size: 1rem;
+    color: #f6f6f5;
+    letter-spacing: 9.12px;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  /*contactenos*/
+  .titulo-contact {
+    text-align: center;
+    padding: 3rem 0 0 0;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 9px;
+  }
+}
+/*footer*/
+.pie-pagina {
+  width: 100%;
+  background-color: #0a141d;
+}
+.pie-pagina .grupo-1 {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  padding: 30px 0px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
