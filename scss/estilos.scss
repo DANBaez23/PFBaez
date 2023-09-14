@@ -342,9 +342,6 @@ section{
 
 }
 
-
-
-
 /*section servicios*/
 
 .section-servicios{
@@ -375,7 +372,6 @@ section{
                 padding: 10px;
             }
 
-          
 
         }
 
@@ -407,6 +403,15 @@ section{
     background-size: cover;
 }
 
+.titulo-contact{
+    text-align: center;
+    padding: 10rem 0 0 0;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 15px;
+}
+
 form{
     display: flex;
     flex-direction: column;
@@ -435,6 +440,7 @@ button img{
 /*media queries*/
 
 @media screen and (max-width: 576px){
+
 
 
     /*navbar*/
@@ -508,7 +514,7 @@ button img{
         background-size: cover;
     
         .contenedor__imagenes{
-           
+
             display: grid;
             grid-template-columns: repeat(1 ,1fr);
 
@@ -531,7 +537,6 @@ button img{
         background-repeat: no-repeat;
         background-position: center;
         background-size: 850px;
-       
     }
     .contenedor2{
 
@@ -665,9 +670,8 @@ button img{
         font-weight: 700;
         letter-spacing: 9px;
     }
-
-    }
-
+        
+    
     /*footer*/
 
     .pie-pagina{
@@ -685,4 +689,8 @@ button img{
         }
     }
     
+
+    }
+
+
 
