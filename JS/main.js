@@ -7,5 +7,5 @@ abrir.addEventListener("click", () => {
 })
 
 cerrar.addEventListener("click", () => {
-    cerrar.classList.remove("visible");
+    nav.classList.remove("visible");
 })
